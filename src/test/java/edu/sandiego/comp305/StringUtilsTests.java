@@ -24,5 +24,20 @@ public class StringUtilsTests {
     void testReverseOddString() {
         assertEquals("edcba", StringUtils.reverseString("abcde"));
     }
+
+    @Test
+    void testReverseStringWithSpaces() {
+        assertEquals("edc ba", StringUtils.reverseString("ab cde"));
+    }
+
+    @Test
+    void testReverseStringWithNumbers() {
+        assertEquals("21cba", StringUtils.reverseString("abc12"));
+    }
+
+    @Test
+    void testReverseStringWithSpecialCharacter() {
+        assertEquals(".cba", StringUtils.reverseString("abc."));
+    }
 }
 
