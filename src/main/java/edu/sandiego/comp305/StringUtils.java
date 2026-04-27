@@ -11,4 +11,9 @@ public class StringUtils {
 
         return reversedString.toString();
     }
+
+    public static void main(String[] args){
+        System.out.print(reverseString(args[0]));
+    }
+
 }
