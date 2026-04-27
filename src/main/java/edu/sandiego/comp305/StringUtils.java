@@ -4,6 +4,7 @@ public class StringUtils {
 
     static String reverseString(String stringToReverse){
         String reversedString = "";
+        reversedString = stringToReverse;
         return reversedString;
     }
 }

@@ -9,9 +9,20 @@ public class StringUtilsTests {
     void testReverseEmptyString() {
         assertEquals("", StringUtils.reverseString(""));
     }
+
     @Test
     void testReversePalindrome() {
         assertEquals("racecar", StringUtils.reverseString("racecar"));
+    }
+
+    @Test
+    void testReverseEvenString() {
+        assertEquals("dcba", StringUtils.reverseString("abcd"));
+    }
+
+    @Test
+    void testReverseOddString() {
+        assertEquals("edcba", StringUtils.reverseString("abcde"));
     }
 }
 
